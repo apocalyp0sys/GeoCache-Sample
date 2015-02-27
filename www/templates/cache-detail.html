@@ -1,0 +1,12 @@
+<ion-view view-title="GeoCache Details">
+  <ion-content class="padding">
+    <h3>{{cache.name}}</h3>
+    <p>
+      {{cache.description}}
+    </p>
+	  <div class="button-bar">
+	    <a class="button button-calm" ng-click="setMap(cache)" ui-sref="tab.map()" >Show on map</a>
+	    <a class="button button-energized">Claim Geocache</a>
+	  </div>
+  </ion-content>
+</ion-view>

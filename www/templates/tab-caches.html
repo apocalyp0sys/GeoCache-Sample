@@ -1,0 +1,14 @@
+<ion-view view-title="Caches">
+  <ion-content>
+    <ion-list>
+		<ion-item class="item item-icon-left" ng-repeat="cache in caches" type="item-text-wrap" href="#/tab/cache/{{cache.id}}">
+			<i class="icon ion-location"></i>
+			{{cache.name}}
+			<span class="item-note">
+			  {{cache.distance}}
+			</span>
+		</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+ 
